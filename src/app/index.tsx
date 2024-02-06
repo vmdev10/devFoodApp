@@ -1,10 +1,12 @@
+import { Header } from "@components/header";
 import React from "react";
-import { View, Text } from "react-native";
+
+import { View } from "react-native";
 
 const Home = () => {
   return (
-    <View className="pt-8 flex-1">
-      <Text className="text-white text-2xl">React Native!</Text>
+    <View className="pt-8 flex-1 px-4">
+      <Header title="Faça seu pedido" cartItemsQuantity={1} />
     </View>
   );
 };

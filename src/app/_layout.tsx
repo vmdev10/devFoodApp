@@ -11,6 +11,7 @@ import {
   Inter_600SemiBold,
   Inter_700Bold,
 } from "@expo-google-fonts/inter";
+import { Loading } from "@components/loading";
 
 const Layout = () => {
   // useFonts -> Usado para carregar as fontes
@@ -22,7 +23,7 @@ const Layout = () => {
   });
 
   if (!fontsLoaded) {
-    return;
+    return <Loading />;
   }
 
   return (
