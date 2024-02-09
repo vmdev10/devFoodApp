@@ -1,6 +1,5 @@
 import { CategoryButton } from "@components/categoryButton";
 import { Header } from "@components/header";
-import { Separator } from "@components/separator";
 
 import { FlatList, View } from "react-native";
 
@@ -12,9 +11,7 @@ const Home = () => {
 
   return (
     <View className="pt-8 flex-1 px-4">
-      <Header title="Faça seu pedido" cartItemsQuantity={1} />
-
-      <Separator />
+      <Header title="Faça seu pedido" cartQuantityItems={1} />
 
       <FlatList
         data={CATEGORIES}
